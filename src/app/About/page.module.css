@@ -1,0 +1,91 @@
+
+.aboutMe {
+  position: relative;
+  padding: 40px 0; 
+  background-image: url('/bg.jpeg'); 
+  background-attachment: fixed; 
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 30px; 
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+.card {
+  background: rgba(71, 209, 248, 0.6); 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(242, 241, 241, 0.615);
+}
+ 
+
+.heading, .contactHeading, .socialHeading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.contactInfo {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+
+.socialLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.socialLink:hover {
+  color: #1e00ff; 
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 20px; 
+    padding: 10px; 
+  }
+
+  .card {
+    padding: 15px; 
+  }
+
+  .heading, .contactHeading, .socialHeading {
+    font-size: 1.5rem; 
+  }
+
+  .paragraph {
+    font-size: 0.9rem; 
+  }
+
+  .contactInfo {
+    font-size: 0.9rem;
+  }
+
+  .socialLinks {
+    flex-direction: row; 
+    justify-content: space-evenly; 
+  }
+
+  .socialLink {
+    font-size: 1rem; 
+  }
+}
