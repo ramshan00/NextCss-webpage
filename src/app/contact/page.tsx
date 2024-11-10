@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import styles from '../contact/page.module.css';
+import styles from '@/app/contact/page.module.css';
 
 const ContactUs = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
