@@ -1,12 +1,12 @@
 import React from 'react'; 
-import styles from '@/app/About/page.module.css';
+import styles from '@/app/about/page.module.css';
 
 const AboutMe = () => {
   return (
     <section className={styles.aboutMe}>
       <div className={styles.container}>
         <div className={styles.card + ' ' + styles.contactCard}>
-          <h3 className={styles.contactHeading}>Contact Details</h3>
+          <h2> className={styles.contactHeading} Contact Details</h2>
           <p className={styles.contactInfo}>
             <strong>Address:</strong> 123 Developer Lane, Code City, 45678
           </p>

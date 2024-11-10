@@ -15,7 +15,7 @@ export default function Typewriter({ text }: TypewriterProps) {
       const timeout = setTimeout(() => {
         setDisplayedText((prev) => prev + text.charAt(index));
         setIndex(index + 1);
-      }, 10); // Adjust the speed here
+      }, 40); // Adjust the speed here
       return () => clearTimeout(timeout);
     }
   }, [index, text]);

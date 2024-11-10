@@ -1,7 +1,7 @@
 'use client'; 
 
 import Typewriter from './components/Typewriter';
-import styles from '@/app/page.module.css';
+import styles from '@/app/Home/page.module.css';
 import Image from 'next/image';
 
 export default function Home() {
@@ -17,23 +17,35 @@ export default function Home() {
     <>
       <section className={styles.home}>
         <div className={styles.leftContent}>
-          <Typewriter text="Hi, I am Ramsha Noshad
-                     Welcome to My Portfolio....." />
+          <Typewriter text="Hi, I am Ramsha Noshad 
+                     " />
+                     <Typewriter text="
+                     Welcome to My Portfolio" />
+                     <br />
           <p> Full Stack Developer with a passion for creating dynamic and user-friendly web applications. I specialize in designing seamless user interfaces and building robust back-end solutions using technologies like HTML, CSS, JavaScript, TypeScript, React.js, Next.js, and more. Explore my work, and feel free to get in touch!!!.</p>
           <button onClick={handleResumeClick} className={styles.resumeButton}>
             Download Resume
           </button>
         </div>
         <div className={styles.rightContent}>
-          <Image src="/DP.jpeg" alt="Profile" width={400} height={400} className={styles.profileImage} />
-        </div>
+  <Image 
+    src="/DP.jpeg" 
+    alt="Profile" 
+    width={400} 
+    height={400} 
+    className={styles.profileImage} 
+  />
+</div>
+
+      
       </section>
 
       {/* Skills Section */}
       <section className={styles.skillsSection}>
         <h2>Skills</h2>
         <div className={styles.skillCards}>
-          <div className={styles.card}>JavaScript</div>
+          <div className={styles.card}>Java
+            Script</div>
           <div className={styles.card}>React</div>
           <div className={styles.card}>Next.js</div>
          <div className={styles.card}>TypeScript</div>

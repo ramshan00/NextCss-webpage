@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import styles from '../ContactUs/page.module.css';
+import styles from '../contact/page.module.css';
 
 const ContactUs = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -27,12 +27,15 @@ const ContactUs = () => {
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Your Name</label>
           <input type="text" id="name" name="name" placeholder="Enter your name" required />
+          <br />
 
           <label htmlFor="email">Your Email</label>
           <input type="email" id="email" name="email" placeholder="Enter your email" required />
+          <br />
 
           <label htmlFor="message">Your Message</label>
           <textarea id="message" name="message" rows={4} placeholder="Enter your message" required></textarea>
+          <br />
 
           <button type="submit">Submit</button>
         </form>
