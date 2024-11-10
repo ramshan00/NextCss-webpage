@@ -1,12 +1,12 @@
 import React from 'react'; 
 import styles from '@/app/About/page.module.css';
 
-const about = () => {
+const AboutMe = () => {
   return (
     <section className={styles.aboutMe}>
       <div className={styles.container}>
         <div className={styles.card + ' ' + styles.contactCard}>
-          <h2> className={styles.contactHeading} Contact Details</h2>
+          <h2 className={styles.contactHeading}> Contact Details</h2>
           <p className={styles.contactInfo}>
             <strong>Address:</strong> 123 Developer Lane, Code City, 45678
           </p>
@@ -48,4 +48,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default AboutMe;
