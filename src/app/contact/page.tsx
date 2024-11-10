@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import styles from '@/app/contact/page.module.css';
 
-const ContactUs = () => {
+const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -44,5 +44,5 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default Contact;
 

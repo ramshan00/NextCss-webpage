@@ -1,7 +1,7 @@
 import React from 'react'; 
 import styles from '@/app/about/page.module.css';
 
-const AboutMe = () => {
+const about = () => {
   return (
     <section className={styles.aboutMe}>
       <div className={styles.container}>
@@ -48,4 +48,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default about;
